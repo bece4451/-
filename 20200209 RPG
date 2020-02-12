@@ -61,7 +61,7 @@ def dead():
             start()
         elif move == "不要":
             print("掰掰")
-            break;
+            quit()
         else:
             print("打錯了喔，再打一次")
 
