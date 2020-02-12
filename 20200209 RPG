@@ -1,0 +1,83 @@
+
+def a():
+    print("恭喜，接下來要左邊還是右邊呢")
+    while True:
+        move = input("> ")
+        if move == "左邊":
+            b()
+            
+        elif move == "右邊":
+            print("你在鏡子裡看到自己100歲的樣子，因為太醜無法接受而猝死了")
+            dead()
+            break;
+        else:
+            print("打錯了喔，再打一次" )
+
+def b():
+    print("恭喜，接下來要左邊還是右邊呢")
+    while True:
+        move = input("> ")
+        if move == "左邊":
+            c()
+            
+        elif move == "右邊":
+            print("你在鏡子裡看到有正妹在洗澡，所以你噴鼻血失血過多死了")
+            dead()
+            break;
+        else:
+            print("打錯了喔，再打一次" )
+
+def c():
+    print("恭喜，接下來要左邊還是右邊呢")
+    while True:
+        move = input("> ")
+        if move == "右邊":
+            win()
+            break;
+        elif move == "左邊":
+            print("鏡子突然碎掉，你永遠被困在鏡子世界裡了")
+            over()
+            break;
+        else:
+            print("打錯了喔，再打一次" )
+
+def win():
+    print("恭喜你逃離出來了")
+    quit()
+
+    
+
+def over():
+    print("你就在鏡子世界裡慢慢死去吧 哇哈哈")
+    quit()
+
+    
+
+def dead():
+    print("嫩，要不要再來一次嗎?")
+    while True:
+        move = input("> ")
+        if move == "要":
+            start()
+        elif move == "不要":
+            print("掰掰")
+            break;
+        else:
+            print("打錯了喔，再打一次")
+
+
+def start():
+    print("歡迎來到鏡子裡的世界，你只能選擇左邊或右邊的鏡子來逃離這裡，答錯就死了。祝你成功逃離!!")
+    print("左邊還是右邊呢")
+    while True:
+        move = input("> ")
+        if move == "右邊":
+            a()
+        elif move == "左邊":
+           print("你在鏡子裡看到後面有一個鬼臉，可是你轉頭卻沒看到人，你就被嚇死了")
+           dead()
+           break;
+        else:
+            print("打錯了喔，再打一次")
+
+start()
